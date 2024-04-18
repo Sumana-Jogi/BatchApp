@@ -1,0 +1,73 @@
+message Country {
+    required binary alpha2Code (UTF8);
+    required binary alpha3Code (UTF8);
+    optional group altSpellings (LIST) {
+        repeated binary array_element (UTF8);
+    }
+    optional double area;
+    optional group borders (LIST) {
+        repeated binary array_element (UTF8);
+    }
+    optional group callingCodes (LIST) {
+        repeated binary array_element (UTF8);
+    }
+    required binary capital (UTF8);
+    optional binary cioc (UTF8);
+    optional group currencies (LIST) {
+        repeated group element {
+            required binary code (UTF8);
+            required binary name (UTF8);
+            required binary symbol (UTF8);
+        }
+    }
+    required binary demonym (UTF8);
+    required binary flag (UTF8);
+    optional double gini;
+    optional group languages (LIST) {
+        repeated group element {
+            optional binary iso639_1 (UTF8);
+            optional binary iso639_2 (UTF8);
+            required binary name (UTF8);
+            optional binary nativeName (UTF8);
+        }
+    }
+    optional group latlng (LIST) {
+        repeated double array_element;
+    }
+    required binary name (UTF8);
+    required binary nativeName (UTF8);
+    optional binary numericCode (UTF8);
+    optional long population;
+    required binary region (UTF8);
+    optional group regionalBlocs (LIST) {
+        repeated group element {
+            optional binary acronym (UTF8);
+            optional binary name (UTF8);
+            optional group otherAcronyms (LIST) {
+                repeated binary array_element (UTF8);
+            }
+            optional group otherNames (LIST) {
+                repeated binary array_element (UTF8);
+            }
+        }
+    }
+    required binary subregion (UTF8);
+    optional group timezones (LIST) {
+        repeated binary array_element (UTF8);
+    }
+    optional group topLevelDomain (LIST) {
+        repeated binary array_element (UTF8);
+    }
+    optional group translations {
+        required binary br (UTF8);
+        required binary de (UTF8);
+        required binary es (UTF8);
+        required binary fa (UTF8);
+        required binary fr (UTF8);
+        required binary hr (UTF8);
+        required binary it (UTF8);
+        required binary ja (UTF8);
+        required binary nl (UTF8);
+        required binary pt (UTF8);
+    }
+}

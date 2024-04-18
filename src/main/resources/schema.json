@@ -1,0 +1,335 @@
+{
+  "type": "struct",
+  "fields": [
+    {
+      "name": "alpha2Code",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "alpha3Code",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "altSpellings",
+      "type": {
+        "type": "array",
+        "elementType": "string",
+        "containsNull": true
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "area",
+      "type": "double",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "borders",
+      "type": {
+        "type": "array",
+        "elementType": "string",
+        "containsNull": true
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "callingCodes",
+      "type": {
+        "type": "array",
+        "elementType": "string",
+        "containsNull": true
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "capital",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "cioc",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "currencies",
+      "type": {
+        "type": "array",
+        "elementType": {
+          "type": "struct",
+          "fields": [
+            {
+              "name": "code",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "symbol",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            }
+          ]
+        },
+        "containsNull": true
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "demonym",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "flag",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "gini",
+      "type": "double",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "languages",
+      "type": {
+        "type": "array",
+        "elementType": {
+          "type": "struct",
+          "fields": [
+            {
+              "name": "iso639_1",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "iso639_2",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "nativeName",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            }
+          ]
+        },
+        "containsNull": true
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "latlng",
+      "type": {
+        "type": "array",
+        "elementType": "double",
+        "containsNull": true
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "nativeName",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "numericCode",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "population",
+      "type": "long",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "region",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "regionalBlocs",
+      "type": {
+        "type": "array",
+        "elementType": {
+          "type": "struct",
+          "fields": [
+            {
+              "name": "acronym",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "otherAcronyms",
+              "type": {
+                "type": "array",
+                "elementType": "string",
+                "containsNull": true
+              },
+              "nullable": true,
+              "metadata": {}
+            },
+            {
+              "name": "otherNames",
+              "type": {
+                "type": "array",
+                "elementType": "string",
+                "containsNull": true
+              },
+              "nullable": true,
+              "metadata": {}
+            }
+          ]
+        },
+        "containsNull": true
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "subregion",
+      "type": "string",
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "timezones",
+      "type": {
+        "type": "array",
+        "elementType": "string",
+        "containsNull": true
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "topLevelDomain",
+      "type": {
+        "type": "array",
+        "elementType": "string",
+        "containsNull": true
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "translations",
+      "type": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "br",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "de",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "es",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "fa",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "fr",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "hr",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "it",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ja",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "nl",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "pt",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "nullable": true,
+      "metadata": {}
+    }
+  ]
+}
