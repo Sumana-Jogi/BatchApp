@@ -13,7 +13,7 @@ public class ApplyTransform {
     public static Dataset<Row> grpByFirstLetter(SparkSession spark, String srcpath){
         Dataset<Row> srcData = spark.read().parquet(srcpath);
         Dataset<Row> grpData = srcData.groupBy(substring(col("name"),0,1).as("letter"))
-                .agg(collect_list("name").as("coutries"))
+                .agg(collect_list("name").as("countries"))
                 .sort(col("letter"));
         return grpData;
     }
