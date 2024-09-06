@@ -2,13 +2,14 @@ package org.example.writer;
 
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
+import org.example.util.Configs;
 
 public class WriteToCassandra {
-    public static void writeToCass(Dataset<Row> data,String keyspace, String table){
+    public static void writeToCass(Dataset<Row> data){
         data.write()
                 .format("org.apache.spark.sql.cassandra")
-                .option("keyspace",keyspace)
-                .option("table",table)
+                .option("keyspace", Configs.CASS_KEYSPACE)
+                .option("table",Configs.CASS_TABLE)
                 .mode("append")
                 .save();
     }
