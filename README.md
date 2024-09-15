@@ -9,6 +9,8 @@ Read/Write Files:
 The application can read data from and write processed data back to local directories.
 Read/Write Datasets in Cassandra:
 Demonstrates how to read from and write datasets to a Cassandra database running in a Docker container.
+Read/Write Datasets in Mysql:
+Demonstrates how to read from and write datasets to a Mysql database via JDBC connection.
 
 Prerequisites
 - Java 8 or higher
@@ -16,4 +18,4 @@ Prerequisites
 - Docker (for running Cassandra)
 - Cassandra 3.x or 4.x (Docker version)
 - Maven (for building the project)
-
+- Mysql
